@@ -3,26 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> pensando ainda</title>
+    <title>Casa Charme & Estilo</title>
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/menu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
 </head>
 <body>
-    <section>
+    <header id="header">
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="#home" class="nav-link" data-menu>Home</a></li>
+                <li class="nav-item"><a href="#destaques" class="nav-link" data-menu>Destaques</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#projeto" class="nav-link">Projeto</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link" data-menu>Contato</a></li>
+
+
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="asset/img/menu_white_36dp.svg" alt="menu"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#home" class="nav-link" data-menu>Home</a></li>
+                <li class="nav-item"><a href="#destaques" class="nav-link">Destaques</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#projeto" class="nav-link" data-menu>Projeto</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link" data-menu>Contato</a></li>
+
+            </ul>
+        </div>
+
+
+
+    </header>
+    <section id="destaques" class="apresentacao">
+        <img src="asset/img/movel.png" alt="imagem de fundo">
+        <h1>Casa Charme & Estilo</h1>
+    </section>
+    <section class="carrossel" id="destaques">
         <div class="container">
+            <h2>Adorado por<br>
+                Nossos Clientes</h2>
             <div class="slider-wrapper">
-                <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+                <button id="destaques-prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
                 <div class="image-list">
-                    <img src="asset/img/img-1.jpg" alt="img-1" class="image-item">
-                    <img src="asset/img/img-2.jpg" alt="img-2" class="image-item">
-                    <img src="asset/img/img-3.jpg" alt="img-3" class="image-item">
-                    <img src="asset/img/img-4.jpg" alt="img-4" class="image-item">
-                    <img src="asset/img/img-5.jpg" alt="img-5" class="image-item">
-                    <img src="asset/img/img-6.jpg" alt="img-6" class="image-item">
-                    <img src="asset/img/img-7.jpg" alt="img-7" class="image-item">
-                    <img src="asset/img/img-8.jpg" alt="img-8" class="image-item">
-                    <img src="asset/img/img-9.jpg" alt="img-9" class="image-item">
-                    <img src="asset/img/img-10.jpg" alt="img-10" class="image-item">
+                    <img src="asset/img/img-1.jpg" alt="Imagem 1" class="image-item">
+                    <img src="asset/img/img-2.jpg" alt="Imagem 2" class="image-item">
+                    <img src="asset/img/img-3.jpg" alt="Imagem 3" class="image-item">
+                    <img src="asset/img/img-4.jpg" alt="Imagem 4" class="image-item">
+                    <img src="asset/img/img-5.jpg" alt="Imagem 5" class="image-item">
+                    <img src="asset/img/img-6.jpg" alt="Imagem 6" class="image-item">
+                    <img src="asset/img/img-7.jpg" alt="Imagem 7" class="image-item">
+                    <img src="asset/img/img-8.jpg" alt="Imagem 8" class="image-item">
+                    <img src="asset/img/img-9.jpg" alt="Imagem 9" class="image-item">
+                    <img src="asset/img/img-10.jpg" alt="Imagem 10" class="image-item">
                 </div>
                 <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
                 <div class="slider-scrollbar">
@@ -33,6 +70,75 @@
             </div>
         </div>
     </section>
+    <section class="carrossel produto-carrossel" id="produtos">
+        <div class="container">
+            <h2>Confira os nossos produtos </h2>
+            <div class="slider-wrapper">
+                <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+                <div class="image-list">
+                    <img src="asset/img/vaso.png" alt="Imagem 1" class="image-item">
+                    <img src="asset/img/img-2.jpg" alt="Imagem 2" class="image-item">
+                    <img src="asset/img/img-3.jpg" alt="Imagem 3" class="image-item">
+                    <img src="asset/img/img-4.jpg" alt="Imagem 4" class="image-item">
+                    <img src="asset/img/img-5.jpg" alt="Imagem 5" class="image-item">
+                    <img src="asset/img/img-6.jpg" alt="Imagem 6" class="image-item">
+                    <img src="asset/img/img-7.jpg" alt="Imagem 7" class="image-item">
+                    <img src="asset/img/img-8.jpg" alt="Imagem 8" class="image-item">
+                    <img src="asset/img/img-9.jpg" alt="Imagem 9" class="image-item">
+                    <img src="asset/img/img-10.jpg" alt="Imagem 10" class="image-item">
+                </div>
+                <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
+                <div class="slider-scrollbar">
+                    <div class="scrollbar-track">
+                        <div class="scrollbar-thumb"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+   
+    <section>
+        <div class="calculator">
+            <h1>Descrubra aqui o seu estilo de decoração</h1>
+            <form id="style-form">
+                <label for="color-scheme">Escolha seu esquema de cores preferido:</label>
+                <select id="color-scheme" name="color-scheme">
+                    <option value="neutro">Neutro</option>
+                    <option value="colorido">Colorido</option>
+                    <option value="tons-pastel">Tons Pastel</option>
+                    <option value="monocromático">Monocromático</option>
+                </select>
+    
+                <label for="furniture">Escolha o estilo de móveis preferido:</label>
+                <select id="furniture" name="furniture">
+                    <option value="moderno">Moderno</option>
+                    <option value="vintage">Vintage</option>
+                    <option value="rústico">Rústico</option>
+                    <option value="contemporâneo">Contemporâneo</option>
+                </select>
+    
+                <label for="decor-elements">Escolha elementos de decoração preferidos:</label>
+                <select id="decor-elements" name="decor-elements">
+                    <option value="minimalista">Minimalista</option>
+                    <option value="boho">Boho</option>
+                    <option value="industrial">Industrial</option>
+                    <option value="clássico">Clássico</option>
+                </select>
+    
+                <button type="submit">Descobrir meu estilo de decoração!</button>
+            </form>
+    
+    
+            <div id="result"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Casa Charme & Estilo</p>
+        <p>desenvolvido por <a href="https://eduardorazevedo.000webhostapp.com" target="_blank">Eduardo Azevedo</a></p>
+    </footer>
 </body>
 <script src="asset/js/script.js" defer ></script>
 </html>

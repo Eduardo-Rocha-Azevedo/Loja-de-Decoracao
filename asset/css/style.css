@@ -197,11 +197,13 @@ html {
 
 /* produtos */
 .produto-carrossel .slider-wrapper .image-list .image-item{
-    width: 325px;
-    height: 200px;
+    width: auto;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
 }
+
+
 
 footer{
     background-color: var(--black);
@@ -211,29 +213,12 @@ footer{
     height: 100px;
 
 }
-
-/* responsividade */
-
-@media (max-width: 1023px){
-    .slider-wrapper .slide-button{
-        display: none!important;
-
-    }
-
-    .slider-wrapper .image-list{
-        gap: 10px;
-        margin-bottom: 15px;
-    }
-
-    .slider-wrapper .image-list .image-item{
-        width: 280px;
-        height: 380px;
-    }
-
-    .slider-scrollbar .scrollbar-thumb{
-        width: 20%;
-    }
+footer a{
+    color: var(--lightWhite);
+    text-decoration: none;
 }
+
+
 
 /* Animacoes*/
 
@@ -274,26 +259,166 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-}
+}   
 
 select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #ca3c08af;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #dd460faf;
 }
 
 #result {
     font-weight: bold;
+}
+/* responsividade */
+
+@media (max-width: 360px){
+    .apresentacao h1{
+        position: absolute; /* Define a posição absoluta para o título */
+        top: 8%; 
+        left: 50%; 
+        font-size: 25px;
+        align-items: center;
+        margin-right: 50%;
+        margin-top: 0;
+    }
+
+    .container h2{
+        font-size: 25px;
+    }
+
+    .apresentacao img{
+        height: 150px;
+        
+    }
+
+    .slider-wrapper .image-list .image-item{
+        width: 280px;
+        height: 200px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb{
+        width: 20%;
+    }
+
+    .produto-carrossel .slider-wrapper .image-list .image-item{
+        width: 200px;
+        height: 300px;
+    }
+
+    .slider-wrapper .slide-button{
+        display: none!important;
+
+    }
+
+    .slider-wrapper .image-list{
+        gap: 10px;
+        margin-bottom: 15px;
+    } .slider-scrollbar .scrollbar-thumb{
+        width: 20%;
+    }
+
+    .produto-carrossel .slider-wrapper .image-list .image-item{
+        width: 200px;
+        height: 250px;
+    }
+
+    .calculator h1{
+        font-size: 25px;
+        margin-bottom: 0.5em;
+    }
+
+}
+
+@media (min-width: 361px) and (max-width: 767px){
+    .apresentacao h1{
+        position: absolute; /* Define a posição absoluta para o título */
+        top: 15%; 
+        left: 40%; 
+        font-size: 40px;
+        align-items: center;
+        margin-right: 50%;
+        margin-top: 0;
+    }
+
+    .container h2{
+        font-size: 25px;
+    }
+
+    .apresentacao img{
+        height: 350px;
+        
+    }
+
+    .slider-wrapper .image-list .image-item{
+        width: 280px;
+        height: 200px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb{
+        width: 20%;
+    }
+
+    .produto-carrossel .slider-wrapper .image-list .image-item{
+        width: 200px;
+        height: 300px;
+    }
+
+    .slider-wrapper .slide-button{
+        display: none!important;
+
+    }
+
+    .slider-wrapper .image-list{
+        gap: 10px;
+        margin-bottom: 15px;
+    } .slider-scrollbar .scrollbar-thumb{
+        width: 20%;
+    }
+
+    .produto-carrossel .slider-wrapper .image-list .image-item{
+        width: 200px;
+        height: 250px;
+    }
+
+    .calculator h1{
+        font-size: 25px;
+        margin-bottom: 0.5em;
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+
+    .slider-wrapper .slide-button{
+        display: none!important;
+
+    }
+
+    .slider-wrapper .image-list{
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .slider-wrapper .image-list .image-item{
+        width: 280px;
+        height: 380px;
+    }
+
+   
 }

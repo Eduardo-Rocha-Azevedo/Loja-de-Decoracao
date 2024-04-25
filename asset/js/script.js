@@ -63,6 +63,7 @@ const initSlider = (sliderId) => {
 window.addEventListener('load', () => {
     initSlider('destaques');
     initSlider('produtos');
+    initSlider('produtos1');
 });
 
 

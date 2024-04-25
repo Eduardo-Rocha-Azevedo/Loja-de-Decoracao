@@ -48,11 +48,11 @@ header nav ul li a:hover {
         background-color: #10101000;
     }
     header.rolagem{
-        background-color: #DD9D4C;
+        background-color: #dd9e4c94;
         transition: 0.5s;
-        width: auto;
+       
         height: auto;
-        margin-top: 8px;
+        
     }
     .nav-bar{
         padding: 1.5rem 4rem;
